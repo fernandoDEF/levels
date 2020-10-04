@@ -1,0 +1,6 @@
+com\diego\userlevels\controller\UserLevelsControl.class
+com\diego\userlevels\entity\UserLevels.class
+com\diego\userlevels\UserLevelsApplication.class
+com\diego\userlevels\service\UserLevelsImpl.class
+com\diego\userlevels\repository\UserLevelsRepo.class
+com\diego\userlevels\service\UserLevelsService.class
