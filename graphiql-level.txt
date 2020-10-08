@@ -1,0 +1,53 @@
+Crear una level y retornar su nombre:
+
+mutation {
+  createLevel(level: {
+    name: "user", 
+    level: "level-0",
+    progress: 0.0,
+    enable: false
+  }) {
+    name
+  }
+}
+
+
+Actualizar la level con id: 1, y retornar su id, nombre usuario y nivel:
+
+mutation {
+  updateLevel(id: 1, level: {
+    name: "user 2",
+    level: "level-0",
+    progress: 0.0,
+    enable: false
+  }) {
+    id
+    name
+    level
+  }
+}
+
+
+Consultar únicamente el nombre de todos los nivels:
+
+query {
+  allLevels {
+    name
+  }
+}
+
+Consultar el id y el nombre en el nivel con id: 1:
+
+query {
+  levelById(id: 1) {
+    id
+    name
+  }
+}
+
+
+Eliminar el usuario con id: 1:
+
+mutation {
+  deleteLevel(id: 1)
+}
